@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>全台開票地圖</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link rel="stylesheet" href="./css/overlay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+        <!-- overlay start -->
+    <div>
+      <div id="tsai01" class="bg tsai_bg">
+        <div class="btn-close">
+          <img src="./images/01_c_tsai/05_btn_close_green.png" alt="close"  onclick="close01()">
+        </div>
+        <!-- 左右區塊分開 -->
+        <div class="center">
+            <!-- 左區塊開始 -->
+            <div class="left">
+                <div class="left-1-photo">
+                    <img src="./images/01_c_tsai/01_photo.png" alt="condidate_tsai" />
+                </div>
+                <div class="left-2-btn">
+                    <!-- small-btn -->
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="OUO-1" cx="15" cy="15" r="15" fill="#D8B9C3" />
+                        <path
+                            d="M14.26 5.5H15.88V21.52C15.88 22.64 15.58 23.08 14.86 23.32C14.14 23.58 12.9 23.62 11 23.62C10.92 23.18 10.64 22.48 10.38 22.04C11.86 22.1 13.3 22.08 13.7 22.06C14.12 22.06 14.26 21.92 14.26 21.52V5.5ZM19.1 10.6L20.54 10.04C22.28 12.86 23.98 16.52 24.5 18.94L22.9 19.58C22.42 17.22 20.8 13.46 19.1 10.6ZM9.02 10.18L10.7 10.46C10.04 13.4 8.88 17.02 7.06 19.26C6.7 18.98 6.04 18.62 5.64 18.46C7.42 16.34 8.52 12.88 9.02 10.18Z"
+                            fill="white"
+                        />
+                    </svg>
+                    <!-- big-btn -->
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="OUO-1" cx="15" cy="15" r="15" fill="#D8B9C3" />
+                        <path
+                            d="M6.24 10.96H23.82V12.48H6.24V10.96ZM15.98 11.56C17.28 16.4 20 20.44 24.16 22.16C23.78 22.5 23.28 23.14 23.02 23.56C18.7 21.52 15.98 17.3 14.48 11.92L15.98 11.56ZM14.22 5.22H15.84C15.76 10.46 15.72 19.58 6.98 23.58C6.74 23.18 6.26 22.64 5.84 22.34C14.34 18.64 14.18 10.02 14.22 5.22Z"
+                            fill="white"
+                        />
+                    </svg>
+                    <!-- share-btn -->
+                    <svg
+                        version="1.1"
+                        id="share_icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 30 30"
+                        style="enable-background: new 0 0 30 30"
+                        xml:space="preserve"
+                    >
+                        <path
+                            class="st0"
+                            d="M23.12,19.31c-1.21,0-2.28,0.56-3,1.42l-9.34-5.39c0.01-0.11,0.03-0.22,0.03-0.34c0-0.24-0.03-0.48-0.07-0.71
+l9.41-5.03c0.72,0.84,1.78,1.38,2.97,1.38c2.17,0,3.94-1.76,3.94-3.94s-1.76-3.94-3.94-3.94s-3.94,1.76-3.94,3.94
+c0,0.26,0.03,0.52,0.08,0.77l-9.38,5.02c-0.72-0.86-1.79-1.42-3-1.42c-2.17,0-3.94,1.76-3.94,3.94s1.76,3.94,3.94,3.94
+c1.33,0,2.51-0.67,3.22-1.68l9.16,5.29c-0.04,0.23-0.07,0.47-0.07,0.71c0,2.17,1.76,3.94,3.94,3.94s3.94-1.76,3.94-3.94
+C27.06,21.07,25.29,19.31,23.12,19.31z"
+                        />
+                    </svg>
+                </div>
+                <div class="left-3-slogan">
+                    <img src="./images/01_c_tsai/02_slogan.png" alt="slogan_tsai" />
+                </div>
+                <div class="left-4-text">
+                    <h4>學歷</h4>
+                    <p>
+                        英國倫敦政治經濟學院法學博士學位<br />
+                        美國康乃爾大學法學院法學碩士<br />
+                        國立臺灣大學法律系法學學士
+                    </p>
+                    <br />
+                    <h4>經歷</h4>
+                    <p>
+                        民進黨主席<br />
+                        -- 2014－迄今<br />
+                        行政院副院長<br />
+                        -- 2006－2007<br />
+                        民進黨不分區立法委員<br />
+                        -- 2004－2006
+                    </p>
+                </div>
+            </div>
+            <!-- 左區塊結束 -->
+            <!-- 右區塊開始 -->
+            <div class="right">
+                <div class="right-1-title">
+                    <h4>戰力指數</h4>
+                </div>
+                <div class="right-2-battle">
+                    <img src="./images/01_c_tsai/03_battle.png" alt="battle_tsai" />
+                </div>
+                <div class="right-3-text">
+                    <div class="right-4-triangle right-4-triangle_tsai">
+                        <p class="p-1">「</p>
+                        <div class="em-text-red">中國</div>
+                        <p class="p-2">只要</p>
+                        <div class="em-text-green">不擋</div>
+                        <p class="p-2">，就是對我們最大的</p>
+                        <div class="em-text-green">幫助</div>
+                        <p class="p-2">。」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_tsai">
+                        <p class="p-1">「其實我……是</p>
+                        <div class="em-text-green">接近</div>
+                        <p class="p-2">的，只是你不知道我在</p>
+                        <div class="em-text-green">接近</div>
+                        <p class="p-2">你而已。」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_tsai">
+                        <p class="p-1">「或許有些人一時</p>
+                        <div class="em-text-green">感受不到</div>
+                        <p class="p-2">，我相信，</p>
+                        <div class="em-text-green">時間到了</div>
+                        <p class="p-2">，他們一定會感受到這是個很認真的政府，我有很認真的在</p>
+                        <div class="em-text-green">解決問題</div>
+                        <p class="p-2">，也一定會有</p>
+                        <div class="em-text-green">成效</div>
+                        <p class="p-2">的。」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_tsai">
+                        <p class="p-1">「當年</p>
+                        <div class="em-text-red">製造問題</div>
+                        <p class="p-2">的人不僅</p>
+                        <div class="em-text-blue">不反省</div>
+                        <p class="p-2">，現在還反過來說要教訓</p>
+                        <div class="em-text-green">改革</div>
+                        <p class="p-2">的人。」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_tsai">
+                        <p class="p-1">「我們要提醒</p>
+                        <div class="em-text-green">全黨上下</div>
+                        <p class="p-2">，應該要用『誠惶誠恐，如履薄冰』的心情來看待人民的託付。我們可以</p>
+                        <div class="em-text-green">高興</div>
+                        <p class="p-2">，但是我們從今天晚上開始，就要以這一次</p>
+                        <div class="em-text-blue">國民黨</div>
+                        <p class="p-2">的</p>
+                        <div class="em-text-red">失敗</div>
+                        <p class="p-2">為警惕。一個政府如果不站在</p>
+                        <div class="em-text-green">人民</div>
+                        <p class="p-2">的這一邊，人民會隨時把權力</p>
+                        <div class="em-text-green">收回去</div>
+                        <p class="p-2">。」</p>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- 右區塊結束 -->
+        </div>
+      </div>
+
+      <div id="han02" class="bg han_bg">
+        <div class="btn-close" >
+            <img src="./images/02_c_han/05_btn_close_blue.png" onclick="close02()">
+        </div>
+        <!-- 左右區塊分開 -->
+        <div class="center">
+            <!-- 左區塊開始 -->
+            <div class="left">
+                <div class="left-1-photo">
+                    <img src="./images/02_c_han/01_photo_han.png" />
+                </div>
+                <div class="left-2-btn">
+                    <!-- small-btn -->
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="OUO-1" cx="15" cy="15" r="15" fill="#D8B9C3" />
+                        <path
+                            d="M14.26 5.5H15.88V21.52C15.88 22.64 15.58 23.08 14.86 23.32C14.14 23.58 12.9 23.62 11 23.62C10.92 23.18 10.64 22.48 10.38 22.04C11.86 22.1 13.3 22.08 13.7 22.06C14.12 22.06 14.26 21.92 14.26 21.52V5.5ZM19.1 10.6L20.54 10.04C22.28 12.86 23.98 16.52 24.5 18.94L22.9 19.58C22.42 17.22 20.8 13.46 19.1 10.6ZM9.02 10.18L10.7 10.46C10.04 13.4 8.88 17.02 7.06 19.26C6.7 18.98 6.04 18.62 5.64 18.46C7.42 16.34 8.52 12.88 9.02 10.18Z"
+                            fill="white"
+                        />
+                    </svg>
+                    <!-- big-btn -->
+                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle class="OUO-1" cx="15" cy="15" r="15" fill="#D8B9C3" />
+                        <path
+                            d="M6.24 10.96H23.82V12.48H6.24V10.96ZM15.98 11.56C17.28 16.4 20 20.44 24.16 22.16C23.78 22.5 23.28 23.14 23.02 23.56C18.7 21.52 15.98 17.3 14.48 11.92L15.98 11.56ZM14.22 5.22H15.84C15.76 10.46 15.72 19.58 6.98 23.58C6.74 23.18 6.26 22.64 5.84 22.34C14.34 18.64 14.18 10.02 14.22 5.22Z"
+                            fill="white"
+                        />
+                    </svg>
+                    <!-- share-btn -->
+                    <svg
+                        version="1.1"
+                        id="share_icon"
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        x="0px"
+                        y="0px"
+                        viewBox="0 0 30 30"
+                        style="enable-background: new 0 0 30 30"
+                        xml:space="preserve"
+                    >
+                        <path
+                            class="st0"
+                            d="M23.12,19.31c-1.21,0-2.28,0.56-3,1.42l-9.34-5.39c0.01-0.11,0.03-0.22,0.03-0.34c0-0.24-0.03-0.48-0.07-0.71
+l9.41-5.03c0.72,0.84,1.78,1.38,2.97,1.38c2.17,0,3.94-1.76,3.94-3.94s-1.76-3.94-3.94-3.94s-3.94,1.76-3.94,3.94
+c0,0.26,0.03,0.52,0.08,0.77l-9.38,5.02c-0.72-0.86-1.79-1.42-3-1.42c-2.17,0-3.94,1.76-3.94,3.94s1.76,3.94,3.94,3.94
+c1.33,0,2.51-0.67,3.22-1.68l9.16,5.29c-0.04,0.23-0.07,0.47-0.07,0.71c0,2.17,1.76,3.94,3.94,3.94s3.94-1.76,3.94-3.94
+C27.06,21.07,25.29,19.31,23.12,19.31z"
+                        />
+                    </svg>
+                </div>
+                <div class="left-3-slogan">
+                    <img src="./images/02_c_han/02_slogan.png" alt="slogan_han" />
+                </div>
+                <div class="left-4-text">
+                    <h4>學歷</h4>
+                    <p>
+                        北京大學政府管理研究所博士班<br />
+                        國立政治大學法學院東亞研究所法學碩士<br />
+                        東吳大學外文學院英文學系文學學士
+                    </p>
+                    <br />
+                    <h4>經歷</h4>
+                    <p>
+                        財團法人典亮慈善基金會董事長<br />
+                        --2022－迄今 <br />
+                        中國國民黨中央委員會常務委員<br />
+                        --2020－迄今 <br />
+                        高雄市第3屆市長<br />
+                        --2018－2020
+                    </p>
+                </div>
+            </div>
+            <!-- 左區塊結束 -->
+            <!-- 右區塊開始 -->
+            <div class="right">
+                <div class="right-1-title">
+                    <h4>戰力指數</h4>
+                </div>
+                <div class="right-2-battle">
+                    <img src="./images/02_c_han/03_battle.png" alt="battle_han" />
+                </div>
+                <div class="right-3-text">
+                    <div class="right-4-triangle right-4-triangle_han">
+                        <p class="p-1">「貨賣得出去，人跟錢進得來，高雄發大財！」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_han">
+                        <p class="p-1">「得民心者得天下，得民調者得痔瘡。」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_han">
+                        <p class="p-1">「來高雄投資，給高雄一萬個工作機會，我就以身相許，晚上跟你睡覺。。。是陪泡茶聊天，不要想歪了！」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_han">
+                        <p class="p-1">「我準備承擔任何重要職務，為了中華民國，不惜粉身碎骨。」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_han">
+                        <p class="p-1">「立足台灣>胸懷大陸>放眼世界>征服宇宙∞」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_han">
+                        <p class="p-1">「莫忘世上苦人多。」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_han">
+                        <p class="p-1">「說出嘴的話語和吃進肚的東西同樣重要。」</p>
+                    </div>
+                    <div class="right-4-triangle right-4-triangle_han">
+                        <p class="p-1">「國民黨再不努力，這一支股票就要下市了！進入全額交割股！」</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 右區塊結束 -->
+        </div>
+      </div>
+
+      <div id="song03" class="bg song_bg">
+        <div class="btn-close">
+            <img src="./images/03_c_song/05_btn_close_orange.png" onclick="close03()">
+            </div>
+            <!-- 左右區塊分開 -->
+            <div class="center">
+                <!-- 左區塊開始 -->
+                <div class="left">
+                    <div class="left-1-photo">
+                      <img src="./images/03_c_song/01_photo_song.png" />
+                    </div>
+                    <div class="left-2-btn">
+                        <!-- small-btn -->
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="OUO-1" cx="15" cy="15" r="15" fill="#D8B9C3" />
+                            <path
+                                d="M14.26 5.5H15.88V21.52C15.88 22.64 15.58 23.08 14.86 23.32C14.14 23.58 12.9 23.62 11 23.62C10.92 23.18 10.64 22.48 10.38 22.04C11.86 22.1 13.3 22.08 13.7 22.06C14.12 22.06 14.26 21.92 14.26 21.52V5.5ZM19.1 10.6L20.54 10.04C22.28 12.86 23.98 16.52 24.5 18.94L22.9 19.58C22.42 17.22 20.8 13.46 19.1 10.6ZM9.02 10.18L10.7 10.46C10.04 13.4 8.88 17.02 7.06 19.26C6.7 18.98 6.04 18.62 5.64 18.46C7.42 16.34 8.52 12.88 9.02 10.18Z"
+                                fill="white"
+                            />
+                        </svg>
+                        <!-- big-btn -->
+                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle class="OUO-1" cx="15" cy="15" r="15" fill="#D8B9C3" />
+                            <path
+                                d="M6.24 10.96H23.82V12.48H6.24V10.96ZM15.98 11.56C17.28 16.4 20 20.44 24.16 22.16C23.78 22.5 23.28 23.14 23.02 23.56C18.7 21.52 15.98 17.3 14.48 11.92L15.98 11.56ZM14.22 5.22H15.84C15.76 10.46 15.72 19.58 6.98 23.58C6.74 23.18 6.26 22.64 5.84 22.34C14.34 18.64 14.18 10.02 14.22 5.22Z"
+                                fill="white"
+                            />
+                        </svg>
+                        <!-- share-btn -->
+                        <svg
+                            version="1.1"
+                            id="share_icon"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                            x="0px"
+                            y="0px"
+                            viewBox="0 0 30 30"
+                            style="enable-background: new 0 0 30 30"
+                            xml:space="preserve"
+                        >
+                            <path
+                                class="st0"
+                                d="M23.12,19.31c-1.21,0-2.28,0.56-3,1.42l-9.34-5.39c0.01-0.11,0.03-0.22,0.03-0.34c0-0.24-0.03-0.48-0.07-0.71
+l9.41-5.03c0.72,0.84,1.78,1.38,2.97,1.38c2.17,0,3.94-1.76,3.94-3.94s-1.76-3.94-3.94-3.94s-3.94,1.76-3.94,3.94
+c0,0.26,0.03,0.52,0.08,0.77l-9.38,5.02c-0.72-0.86-1.79-1.42-3-1.42c-2.17,0-3.94,1.76-3.94,3.94s1.76,3.94,3.94,3.94
+c1.33,0,2.51-0.67,3.22-1.68l9.16,5.29c-0.04,0.23-0.07,0.47-0.07,0.71c0,2.17,1.76,3.94,3.94,3.94s3.94-1.76,3.94-3.94
+C27.06,21.07,25.29,19.31,23.12,19.31z"
+                            />
+                        </svg>
+                    </div>
+                    <div class="left-3-slogan">
+                        <img src="./images/03_c_song/02_slogan.png" />
+                    </div>
+                    <div class="left-4-text">
+                        <h4>學歷</h4>
+                        <p>
+                            喬治城大學政治學博士<br />
+                            柏克萊加利福尼亞大學政治學碩士<br />
+                            加利福尼亞大學柏克萊分校國際關係碩士<br />
+                            國立政治大學外交學系法學學士
+                        </p>
+                        <br />
+                        <h4>經歷</h4>
+                        <p>
+                            親民黨主席<br />
+                            --2000－迄今<br />
+                            臺北市政府市政顧問總召集人<br />
+                            --2014－2021<br />
+                            中華民國總統府資政<br />
+                            --2016－2019
+                        </p>
+                    </div>
+                </div>
+                <!-- 左區塊結束 -->
+                <!-- 右區塊開始 -->
+                <div class="right">
+                    <div class="right-1-title"><h4>戰力指數</h4></div>
+                    <div class="right-2-battle"><img src="./images/03_c_song/03_battle.png" alt="battle_song" /></div>
+                    <div class="right-3-text">
+                        <div class="right-4-triangle right-4-triangle_song"><p class="p-1">「自古時勢造英雄，豈有主角等燈光！」</p>
+                        </div>
+                        <div class="right-4-triangle right-4-triangle_song">
+                            <p class="p-1">「你可以去問他們為什麼不讓宋楚瑜參選，其實藍白合只要推宋楚瑜出來參選，問題不就解決了嗎？」</p>
+                        </div>
+                        <div class="right-4-triangle right-4-triangle_song">
+                            <p class="p-1">
+                                「希望國民黨好朋友們，好好去看一看古文觀止，宋楚瑜只有兩萬票，不要自己四面楚歌、草木皆兵，就怕中了我的十面埋伏。」
+                            </p>
+                        </div>
+                        <div class="right-4-triangle right-4-triangle_song">
+                            <p class="p-1">「希望馬總統對八年來人民遇到的問題多費點心，而不是要評論下任總統是男性還是女性。」</p>
+                        </div>
+                        <div class="right-4-triangle right-4-triangle_song">
+                            <p class="p-1">
+                                「宋楚瑜也好，親民黨也好，不會去對於民進黨新執政之後，要給他們去喬位置，去找什麼官來做。我們要提的是在立法院，我們共同協助，我們不要站在任何哪個政黨那一邊而是站在人民那一邊。」
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 右區塊結束 -->
+            </div>
+      </div>
+    </div>
+    <!-- overlay end -->
+    <!-- header start -->
+    <div class="pageContainer">
+      <header class="isTop">
+        <div class="wrap">
+          <div class="logo">
+            <a href="./index.html">
+              <!-- <svg><use href="#iconLogo"></use></svg> -->
+              <img
+                class="headerLogo"
+                src="./images/00_header/LOGO2.png"
+                alt=""
+              />
+              <!-- <svg><use xlink:href="#iconLogo"></use></svg>
+                    <svg><use xlink:href="#iconLogoText"></use></svg> -->
+            </a>
+          </div>
+          <nav>
+            <ul class="menu">
+              <li>
+                <a href="./02_map.html"
+                  ><img
+                    src="./images/00_header/headphones2.png"
+                    alt=""
+                  />開票地圖</a
+                >
+              </li>
+              <li><a href="#" onclick="open01()">辣小英</a></li>
+              <li><a href="#" onclick="open02()">韓導</a></li>
+              <li><a href="#" onclick="open03()">辣個男人</a></li>
+            </ul>
+          </nav>
+          <ul class="socialList">
+            <li>
+              <a href="#" class="btnFontSize"
+                ><img
+                  class="smallIcon"
+                  src="./images/00_header/small.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="btnFontSize"
+                ><img class="bigIcon" src="./images/00_header/big.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#" class="btn-share"
+                ><img
+                  class="shareIcon"
+                  src="./images/00_header/share.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+          <button type="button" class="menuOpenBtn"><span></span></button>
+        </div>
+        <div class="share social-software">
+          <img
+            onclick="icon_Click()"
+            src="./images/00_header/Facebook.png"
+            alt=""
+          />
+          <img
+            onclick="icon_Click()"
+            src="./images/00_header/Instagram.png"
+            alt=""
+          />
+          <img
+            onclick="icon_Click()"
+            src="./images/00_header/TwitterX.png"
+            alt=""
+          />
+          <img
+            onclick="icon_Click()"
+            src="./images/00_header/LINE.png"
+            alt=""
+          />
+          <img
+            onclick="icon_Click()"
+            src="./images/00_header/Plurk.png"
+            alt=""
+          />
+        </div>
+      </header>
+    </div>
+    <!-- header end -->
+
+    <div class="container">
+      <div class="main-section">
+        <div class="left-section">
+          <!-- <img
+            class="bgTriangle"
+            src="./images/01_homepage/triangle.png"
+            alt=""
+          /> -->
+          <h1>2020<br />總統大選</h1>
+          <div id="invoicing">
+            <!-- <div id="bgSeal"></div>
+            <h2><a href="./02_map.html">看開票！</a></h2>
+            <div id="bgArr"></div> -->
+            <a href="./02_map.html" class="check_btn"><span>看開票！</span></a>
+          </div>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <img
+            class="left-rect"
+            src="./images/01_homepage/left_rectangle.png"
+            alt=""
+          />
+          <!-- Swiper 1 -->
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide sShadow">
+                <img src="./images/01_homepage/cadicate_T2.png" alt="" />
+              </div>
+              <div class="swiper-slide sShadow">
+                <img src="./images/01_homepage/cadicate_H2.png" alt="" />
+              </div>
+              <div class="swiper-slide sShadow">
+                <img src="./images/01_homepage/cadicate_S2.png" alt="" />
+              </div>
+              <!-- Navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+          <!-- Swiper 2 -->
+          <div class="swiper mySwiper2 slogan">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/01_homepage/slogan_1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/01_homepage/slogan_2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/01_homepage/slogan_3.png" alt="" />
+              </div>
+            </div>
+          </div>
+          <img
+            class="right-rect"
+            src="./images/01_homepage/right_rectangle.png"
+            alt=""
+          />
+        </div>
+
+        <div class="text-container">
+          <p class="text">歡迎收看 2020 年總統</p>
+          <div class="em-text">格鬥大會</div>
+          <p class="text">
+            ，我們這次有三位參賽者，各有千秋，搭配不同的專屬技能，歡迎全台民眾，一同來觀賞他們的即時演出吧！
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>資料來源：政府資料開放平台 | 網站版權所有◎▼◎</p>
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/overlay.js"></script>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+/* @font-face {
+    font-family: 'MyCustomFont';
+    src: url('../fonts/Inter-Medium.ttf');
+    src: url('../fonts/Inter-SemiBold.ttf') format('MyCustomFont');
+    unicode-range: U+4E00-9FFF;
+} */
+
+#tsai01 {
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+#han02 {
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+#song03 {
+    position: relative;
+    z-index: 2;
+    display: none;
+}
+
+.tsai_bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/01_c_tsai/00_bg_tsai.png);
+}
+.han_bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/02_c_han/00_bg_han.png);
+}
+.song_bg {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url(../images/03_c_song/00_bg_song.png);
+}
+
+.bg {
+    width: 70vw;
+    height: 91.8vh;
+    margin: 75px auto;
+    border-radius: 40px 40px 0px 0px;
+    /* background-color: rgba(255, 255, 255, 0.6); */
+    /* border: 1px solid #000; */
+    background-attachment: local;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(5px);
+    background-position: center top;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll; 
+}
+
+.bg::-webkit-scrollbar {
+    display: none;
+}
+.btn-close {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top: 3%;
+    right: 2%;
+    z-index: 1;
+}
+.btn-close > img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.center {
+    position: absolute;
+    height: 100%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* 左區塊開始 */
+.left {
+    position: relative;
+    width: 50%;
+    margin: 50px 30px 50px;
+    /* display: flex; */
+    /* align-items: center; */
+}
+.left-1-photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.left-2-btn {
+    position: relative;
+    margin: 30px auto;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.OUO-1:hover {
+    fill: #827397;
+}
+.OUO-2:hover {
+    fill: #d8b9c3;
+}
+#share_icon {
+    width: 30px;
+    height: 30px;
+}
+.st0 {
+    fill: #827298;
+}
+
+#share_icon:hover > .st0 {
+    fill: #d8b9c3;
+}
+
+.left-3-slogan {
+    position: relative;
+    display: flex;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.left-4-text {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    color: #363062;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 15%;
+}
+
+.left-4-text > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 35px;
+    letter-spacing: 15%;
+    margin: 15px 0;
+}
+
+/* 左區塊結束 */
+/* 右區塊開始 */
+.right {
+    position: relative;
+    width: 50%;
+    margin: 50px 30px 50px;
+}
+
+.right-1-title {
+    position: relative;
+    margin: 0 auto;
+}
+
+.right-2-battle {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.right-3-text {
+    position: relative;
+    margin: 0 auto;
+}
+
+.right-4-triangle {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    background-repeat: no-repeat;
+    text-align: justify;
+}
+.right-4-triangle_tsai {
+    background-image: url(../images/01_c_tsai/04_triangle.png);
+}
+.right-4-triangle_han {
+    background-image: url(../images/02_c_han/04_triangle.png);
+}
+.right-4-triangle_song {
+    background-image: url(../images/03_c_song/04_triangle.png);
+}
+
+.text-container {
+    display: inline;
+    text-align: justify;
+    flex-direction: row;
+}
+
+.p-1 {
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    text-indent: 2em;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 15%;
+}
+
+.p-2 {
+    font-family: 'Inter', sans-serif;
+    display: inline;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 15%;
+}
+
+.em-text-red {
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin: 0;
+    padding: 0px 4px;
+    color: #b70404;
+    font-size: 20px;
+    letter-spacing: 15%;
+    font-weight: 500;
+    line-height: 32px;
+    border: 1px solid #b70404;
+}
+
+.em-text-green {
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin: 0;
+    padding: 0px 4px;
+    color: #1b9431;
+    font-size: 20px;
+    letter-spacing: 15%;
+    font-weight: 500;
+    line-height: 32px;
+    border: 1px solid #1b9431;
+}
+
+.em-text-blue {
+    font-family: 'Inter', sans-serif;
+    display: inline-block;
+    margin: 0;
+    padding: 0px 4px;
+    color: #000095;
+    font-size: 20px;
+    letter-spacing: 15%;
+    font-weight: 500;
+    line-height: 32px;
+    border: 1px solid #000095;
+}
+
+/* 右區塊結束 */
